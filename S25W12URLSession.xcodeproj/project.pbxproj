@@ -32,13 +32,25 @@
 		3FD88EFA2ECD9B6E004FD6A4 /* S25W12URLSessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = S25W12URLSessionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD88F042ECD9B6E004FD6A4 /* S25W12URLSessionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = S25W12URLSessionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD88F212ECD9E44004FD6A4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		3FD88F402ED44043004FD6A4 /* SongRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRepository.swift; sourceTree = "<group>"; };
-		3FD88F412ED44089004FD6A4 /* SupabaseSongRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseSongRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3FD88F712ED442BA004FD6A4 /* Exceptions for "S25W12URLSession" folder in "S25W12URLSession" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Repository/SongRepository.swift,
+				Repository/SupabaseSongRepository.swift,
+			);
+			target = 3FD88EEC2ECD9B6D004FD6A4 /* S25W12URLSession */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3FD88EEF2ECD9B6D004FD6A4 /* S25W12URLSession */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3FD88F712ED442BA004FD6A4 /* Exceptions for "S25W12URLSession" folder in "S25W12URLSession" target */,
+			);
 			path = S25W12URLSession;
 			sourceTree = "<group>";
 		};
@@ -50,11 +62,6 @@
 		3FD88F072ECD9B6E004FD6A4 /* S25W12URLSessionUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = S25W12URLSessionUITests;
-			sourceTree = "<group>";
-		};
-		3FD88F3A2ED43BA6004FD6A4 /* ViewModel */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -87,8 +94,6 @@
 		3FD88EE42ECD9B6D004FD6A4 = {
 			isa = PBXGroup;
 			children = (
-				3FD88F3F2ED44038004FD6A4 /* Repository */,
-				3FD88F3A2ED43BA6004FD6A4 /* ViewModel */,
 				3FD88F212ECD9E44004FD6A4 /* .gitignore */,
 				3FD88EEF2ECD9B6D004FD6A4 /* S25W12URLSession */,
 				3FD88EFD2ECD9B6E004FD6A4 /* S25W12URLSessionTests */,
@@ -105,15 +110,6 @@
 				3FD88F042ECD9B6E004FD6A4 /* S25W12URLSessionUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		3FD88F3F2ED44038004FD6A4 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				3FD88F412ED44089004FD6A4 /* SupabaseSongRepository.swift */,
-				3FD88F402ED44043004FD6A4 /* SongRepository.swift */,
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +129,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				3FD88EEF2ECD9B6D004FD6A4 /* S25W12URLSession */,
-				3FD88F3A2ED43BA6004FD6A4 /* ViewModel */,
 			);
 			name = S25W12URLSession;
 			packageProductDependencies = (
