@@ -2,8 +2,10 @@ import SwiftUI
 
 @MainActor
 @Observable
+
 final class SongViewModel {
     private let repository: SongRepository
+        
     init(repository: SongRepository = SupabaseSongRepository()) {
         self.repository = repository
     }
@@ -27,6 +29,18 @@ final class SongViewModel {
         do {
             try await repository.saveSong(song)
             _songs.append(song)
+        }
+        catch {
+            debugPrint("에러 발생: \(error)")
+        }
+    }
+    
+    func deleteSong(_ song: Song) async {
+        do {
+            try await repository.deleteSong(song.id.uuidString)
+            if let index = _songs.firstIndex(where: { $0.id == song.id }) {
+                _songs.remove(at: index)
+            }
         }
         catch {
             debugPrint("에러 발생: \(error)")
