@@ -4,7 +4,6 @@ import SwiftUI
 @Observable
 final class SongViewModel {
     private let repository: SongRepository
-        
     init(repository: SongRepository = SupabaseSongRepository()) {
         self.repository = repository
     }
