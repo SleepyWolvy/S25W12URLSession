@@ -34,23 +34,9 @@
 		3FD88F212ECD9E44004FD6A4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3FD88F712ED442BA004FD6A4 /* Exceptions for "S25W12URLSession" folder in "S25W12URLSession" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Repository/SongRepository.swift,
-				Repository/SupabaseSongRepository.swift,
-			);
-			target = 3FD88EEC2ECD9B6D004FD6A4 /* S25W12URLSession */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3FD88EEF2ECD9B6D004FD6A4 /* S25W12URLSession */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3FD88F712ED442BA004FD6A4 /* Exceptions for "S25W12URLSession" folder in "S25W12URLSession" target */,
-			);
 			path = S25W12URLSession;
 			sourceTree = "<group>";
 		};
